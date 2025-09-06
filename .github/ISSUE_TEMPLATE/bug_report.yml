@@ -1,0 +1,50 @@
+name: 🐛 Bug Report
+description: Something is broken and needs fixing.
+labels: ["bug"]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: Clear, one‑sentence description
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: 1) … 2) … 3) …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior / Logs
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: OS, browser/node, app version/commit
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - critical
+        - high
+        - medium
+        - low
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots (optional)

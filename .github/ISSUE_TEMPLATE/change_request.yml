@@ -1,0 +1,28 @@
+name: 🔧 Change Request
+description: Adjust behavior, workflow, or configuration.
+labels: ["change"]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current Behavior
+    validations:
+      required: true
+  - type: textarea
+    id: desired
+    attributes:
+      label: Desired Change
+      placeholder: What should it do instead?
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact / Rationale
+      placeholder: Benefits, risks, affected areas

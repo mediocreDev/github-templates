@@ -1,0 +1,22 @@
+name: 💡 Improvement
+description: Make something better (code, UX, docs, performance).
+labels: ["improve"]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      placeholder: What feels lacking or could be better?
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Improvement
+      placeholder: Outline the approach or acceptance criteria.
+    validations:
+      required: true
